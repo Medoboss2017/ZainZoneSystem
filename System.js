@@ -53,24 +53,6 @@ client.on('message' , message => {
 }
 });
 
-client.on('message', message => {
-    if (!message.guild) return;
-    if (message.content.startsWith("رابط")) {
-
-        message.channel.createInvite({
-        thing: true,
-        maxUses: 5,
-        maxAge: 86400
-    }).then(invite =>
-      message.author.sendMessage(invite.url)
-    )
-  message.channel.send(`** تم أرسال الرابط برسالة خاصة **`)
-
-      message.author.send(`**مدة الرابط : يـوم
- عدد استخدامات الرابط : 5 **`)
-    }
-});
-
 client.on("ready", async  => {
 setInterval(function(){
 client.channels.find('id', '539941707861458944').setName("W");
