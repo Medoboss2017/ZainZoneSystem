@@ -25,28 +25,6 @@ if(msg.content.startsWith (prefix  + 'serverinfo')) {
 }
 });
 
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '539941707861458944').setName("W");
-client.channels.find('id', '539941707861458944').setName("We");
-client.channels.find('id', '539941707861458944').setName("Wel");
-client.channels.find('id', '539941707861458944').setName("Welc");
-client.channels.find('id', '539941707861458944').setName("Welco");
-client.channels.find('id', '539941707861458944').setName("Welcom");
-client.channels.find('id', '539941707861458944').setName("Welcome");
-client.channels.find('id', '539941707861458944').setName("Welcome T");
-client.channels.find('id', '539941707861458944').setName("Welcome To");
-client.channels.find('id', '539941707861458944').setName("Welcome To Z");
-client.channels.find('id', '539941707861458944').setName("Welcome To Za");
-client.channels.find('id', '539941707861458944').setName("Welcome To Zai");
-client.channels.find('id', '539941707861458944').setName("Welcome To Zain");
-client.channels.find('id', '539941707861458944').setName("Welcome To ZainZ");
-client.channels.find('id', '539941707861458944').setName("Welcome To ZainZo");
-client.channels.find('id', '539941707861458944').setName("Welcome To ZainZon");
-client.channels.find('id', '539941707861458944').setName("Welcome To ZainZone");
-  }, 6000);
-});
-
 client.on('message' , message => {
   if (message.author.dark) return;
   if (!message.content.startsWith(prefix)) return;
@@ -91,6 +69,28 @@ client.on('message', message => {
       message.author.send(`**مدة الرابط : يـوم
  عدد استخدامات الرابط : 5 **`)
     }
+});
+
+client.on("ready", async  => {
+setInterval(function(){
+client.channels.find('id', '539941707861458944').setName("W");
+client.channels.find('id', '539941707861458944').setName("We");
+client.channels.find('id', '539941707861458944').setName("Wel");
+client.channels.find('id', '539941707861458944').setName("Welc");
+client.channels.find('id', '539941707861458944').setName("Welco");
+client.channels.find('id', '539941707861458944').setName("Welcom");
+client.channels.find('id', '539941707861458944').setName("Welcome");
+client.channels.find('id', '539941707861458944').setName("Welcome T");
+client.channels.find('id', '539941707861458944').setName("Welcome To");
+client.channels.find('id', '539941707861458944').setName("Welcome To Z");
+client.channels.find('id', '539941707861458944').setName("Welcome To Za");
+client.channels.find('id', '539941707861458944').setName("Welcome To Zai");
+client.channels.find('id', '539941707861458944').setName("Welcome To Zain");
+client.channels.find('id', '539941707861458944').setName("Welcome To ZainZ");
+client.channels.find('id', '539941707861458944').setName("Welcome To ZainZo");
+client.channels.find('id', '539941707861458944').setName("Welcome To ZainZon");
+client.channels.find('id', '539941707861458944').setName("Welcome To ZainZone");
+  }, 5000);
 });
 
 client.login(process.env.BOT_TOKEN);
