@@ -44,7 +44,7 @@ client.channels.find('id', '539941707861458944').setName("Welcome To ZainZ");
 client.channels.find('id', '539941707861458944').setName("Welcome To ZainZo");
 client.channels.find('id', '539941707861458944').setName("Welcome To ZainZon");
 client.channels.find('id', '539941707861458944').setName("Welcome To ZainZone");
-  }, 60000);
+  }, 6000);
 });
 
 client.login(process.env.BOT_TOKEN);
