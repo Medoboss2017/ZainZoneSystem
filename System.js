@@ -53,26 +53,4 @@ client.on('message' , message => {
 }
 });
 
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '540118371212197889').setName("W");
-client.channels.find('id', '540118371212197889').setName("We");
-client.channels.find('id', '540118371212197889').setName("Wel");
-client.channels.find('id', '540118371212197889').setName("Welc");
-client.channels.find('id', '540118371212197889').setName("Welco");
-client.channels.find('id', '540118371212197889').setName("Welcom");
-client.channels.find('id', '540118371212197889').setName("Welcome");
-client.channels.find('id', '540118371212197889').setName("Welcome T");
-client.channels.find('id', '540118371212197889').setName("Welcome To");
-client.channels.find('id', '540118371212197889').setName("Welcome To Z");
-client.channels.find('id', '540118371212197889').setName("Welcome To Za");
-client.channels.find('id', '540118371212197889').setName("Welcome To Zai");
-client.channels.find('id', '540118371212197889').setName("Welcome To Zain");
-client.channels.find('id', '540118371212197889').setName("Welcome To ZainZ");
-client.channels.find('id', '540118371212197889').setName("Welcome To ZainZo");
-client.channels.find('id', '540118371212197889').setName("Welcome To ZainZon");
-client.channels.find('id', '540118371212197889').setName("Welcome To ZainZone");
-  }, 5000);
-});
-
 client.login(process.env.BOT_TOKEN);
